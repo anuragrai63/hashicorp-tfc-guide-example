@@ -13,5 +13,5 @@ resource "aws_instance" "myawsserver" {
 }
 
 output "Private-IP" {
- value = aws_instance.myawsserver.private_ip
+ value = aws_instance.myawsserver.public_ip
 }
