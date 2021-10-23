@@ -7,11 +7,11 @@ resource "aws_instance" "myawsserver" {
   instance_type = "t2.nano"
   
   tags = {
-    Name = "anurag-instance"
+    Name = "anurag-instance-v1"
     env = "test"
   }
 }
 
-output "Private-IP" {
+output "Public-IP" {
  value = aws_instance.myawsserver.public_ip
 }
